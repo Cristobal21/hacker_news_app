@@ -1,0 +1,130 @@
+
+/* title bar */
+
+.title-container {
+    display: flex;
+    align-items: center;
+    height: 114px;
+    border-bottom: 1px solid #ececec;
+    background: linear-gradient(to bottom, #ececec -32%, #fff 124%);
+    box-shadow: 0 1px 4px 0 rgba(0, 21, 41, 0.12);
+}
+
+.ff-text {
+    font-family: Baskerville;
+    font-size: 28px;
+    color: #3b3b3b;
+}
+
+
+
+/* nav menu */
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.ul-style {
+    max-width: 100%;
+    width: 1px;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    list-style: none;
+    padding-inline-start: 0px;
+    /* border: 1px solid black; */
+}
+
+.nav-all {
+    width: 98px;
+    height: 31px;
+    padding: 0;
+    border-radius: 2px;
+    border: solid 1px #1797ff;
+    display: flex;
+    align-items: center;
+}
+
+.nav-faves {
+    width: 98px;
+    height: 31px;
+    border-radius: 2px;
+    border: solid 1px #d6d6d6;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.all-style {
+    width: 98px;
+    height: 31px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1797ff;
+    text-decoration: none;
+}
+
+.faves-style {
+    width: 98px;
+    height: 31px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #606060;
+    text-decoration: none;
+
+}
+
+
+
+/* .faves-style:focus {
+    border-top: 1px solid #1797ff;
+    border-right: 1px solid #1797ff;
+    border-bottom: 1px solid #1797ff;
+    border-left: 1px solid #6b6b6b;
+}
+
+.all-style:focus {
+    border-top: 1px solid #1797ff;
+    border-left: 1px solid #1797ff;
+    border-bottom: 1px solid #1797ff;
+    border-right: 1px solid #6b6b6b;
+} */
+
+
+
+/* Media Query */
+
+@media only screen and ( max-width: 768px ) {
+    .title-container, .nav-container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 1440px ) {
+    .ff-text {
+        margin-left: 115px;
+    }
+}
+
+@media only screen and ( max-width: 768px ) {
+    .title-container, .nav-container, .ul-style {
+        display: flex;
+        justify-content: center;
+
+    }
+}
