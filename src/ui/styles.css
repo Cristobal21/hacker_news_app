@@ -89,23 +89,6 @@
 }
 
 
-
-/* .faves-style:focus {
-    border-top: 1px solid #1797ff;
-    border-right: 1px solid #1797ff;
-    border-bottom: 1px solid #1797ff;
-    border-left: 1px solid #6b6b6b;
-}
-
-.all-style:focus {
-    border-top: 1px solid #1797ff;
-    border-left: 1px solid #1797ff;
-    border-bottom: 1px solid #1797ff;
-    border-right: 1px solid #6b6b6b;
-} */
-
-
-
 /* Media Query */
 
 @media only screen and ( max-width: 768px ) {

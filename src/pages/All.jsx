@@ -1,8 +1,10 @@
+import { Dropdown } from "../components/Dropdown"
+import { NavBar } from "../ui/NavBar"
 
 export const All = () => {
     return (
         <>
-            <h1>All</h1>
+            <Dropdown />
         </>
     )
 }
