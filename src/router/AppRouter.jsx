@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { All, Faves } from "../pages"
+import { All, Faves, ReactNews } from "../pages"
 
 export const AppRouter = () => {
     return (
@@ -7,6 +7,7 @@ export const AppRouter = () => {
             <Routes>
                 <Route path="/" element={<All />} />
                 <Route path="faves" element={<Faves />} />
+                <Route path="react" element={<ReactNews />} />
             </Routes>
         </>
     )

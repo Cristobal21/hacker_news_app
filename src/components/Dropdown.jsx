@@ -27,20 +27,20 @@ export const Dropdown = () => {
             <div className="dropdown-container">
                 <button className="dropbtn" onClick={handleClick}>
                     Select your news
-                    <i id='icon-style' class="fa-solid fa-angle-down"></i>
+                    <i id='icon-style' className="fa-solid fa-angle-down"></i>
                 </button>
                 <div id='idDropdownContent' className='dropdown-content'>
                     <Link to="angular">
                         <img src="../public/imgs/angular.jpg" alt="angular" />
-                        Angular
+                        <p>Angular</p>
                     </Link>
                     <Link to="react">
                         <img src="../public/imgs/react.jpg" alt="react" />
-                        React
+                        <p>React</p>
                     </Link>
                     <Link to="vuejs">
                         <img src="../public/imgs/vuejs.jpg" alt="vuejs" />
-                        Vuejs
+                        <p>Vuejs</p>
                     </Link>
                 </div>
             </div>

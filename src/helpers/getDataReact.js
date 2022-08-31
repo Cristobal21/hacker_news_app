@@ -5,6 +5,15 @@ export const getDataReact = async ( id ) => {
     const resp = await fetch(url)
     const { hits } = await resp.json()
 
-    console.log(hits)
+    const dataReact = hits.map( data => ({
+        author: data.author,
+        title: data.story_title,
+        url: data.story_url,
+        created: data.created_at,
+    }) )
+
+    // console.log(hits);
+
+    return dataReact
 
 }
