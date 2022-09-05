@@ -10,7 +10,7 @@ export const NewsReactGrid = () => {
             {
                 newsReact.map( data => (
                     <NewsReactItem
-                        key={data.author}
+                        key={data.id}
                         { ...data }
                     />
                 ))

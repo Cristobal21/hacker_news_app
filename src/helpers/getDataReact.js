@@ -6,6 +6,7 @@ export const getDataReact = async ( id ) => {
     const { hits } = await resp.json()
 
     const dataReact = hits.map( data => ({
+        id: data.objectID,
         author: data.author,
         title: data.story_title,
         url: data.story_url,
