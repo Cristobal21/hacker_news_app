@@ -30,15 +30,15 @@ export const Dropdown = () => {
                     <i id='icon-style' className="fa-solid fa-angle-down"></i>
                 </button>
                 <div id='idDropdownContent' className='dropdown-content'>
-                    <Link to="angular">
+                    <Link to="/angular">
                         <img src="../public/imgs/angular.jpg" alt="angular" />
                         <p>Angular</p>
                     </Link>
-                    <Link to="react">
+                    <Link to="/react">
                         <img src="../public/imgs/react.jpg" alt="react" />
                         <p>React</p>
                     </Link>
-                    <Link to="vuejs">
+                    <Link to="/vuejs">
                         <img src="../public/imgs/vuejs.jpg" alt="vuejs" />
                         <p>Vuejs</p>
                     </Link>
