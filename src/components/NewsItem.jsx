@@ -1,9 +1,16 @@
+import { BiTimeFive } from "react-icons/bi"
 
-export const NewsVueItem = ({ author, created, title, url }) => {
+
+export const NewsItem = ({ author, created, title, url }) => {
+
+    const newsDate = created.slice(0,10)
+    const newsFullHour = created.slice(11,19)
+    const newsHourMin = newsFullHour.slice(0,5)
+
 
     const handleClick = () => {
         $(document).ready(() => {
-            $("img").click(() => {
+            $("img").click((e) => {
                 $("img").toggleClass("backImage")
             })
         })
@@ -13,15 +20,14 @@ export const NewsVueItem = ({ author, created, title, url }) => {
         window.open(url,"_blank")
     }
 
-
     {
         if ( author, created, title, url ) {
             return (
                 <>
                     <div className="container-news" >
                         <div className="container-text" onClick={ handleClickContainerText }>
-                            <p>{`${created} ago by ${author}`}</p>
-                            <p>{title}</p>
+                            <p className="p1"><BiTimeFive/>{` Posted on ${newsDate} at ${newsHourMin} by ${author}`}</p>
+                            <p className="p2">{title}</p>
                         </div>
                         <div className="container-liked-button">
                             <div className="liked-button" id="containerHeartId">

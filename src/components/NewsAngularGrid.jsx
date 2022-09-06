@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useFetchDataAngular } from "../hooks/useFetchDataAngular"
-import { NewsAngularItem } from "./NewsAngularItem"
+import { NewsItem } from "./NewsItem"
 
 
 export const NewsAngularGrid = () => {
@@ -21,7 +21,7 @@ export const NewsAngularGrid = () => {
         <div className="container-box-news">
             {
                 newsFilterA.map(data => (
-                    <NewsAngularItem
+                    <NewsItem
                         key={data.id}
                         {...data}
                     />

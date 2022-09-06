@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { PaginationNews } from "../components/PaginationNews"
-import { All, AngularNews, Faves, ReactNews, VuejsNews } from "../pages"
+import { AngularNews, Faves, ReactNews, VuejsNews } from "../pages"
 
 export const AppRouter = () => {
     return (

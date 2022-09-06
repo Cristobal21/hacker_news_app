@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useFetchDataVuejs } from "../hooks/useFetchDataVuejs"
-import { NewsVueItem } from "./NewsVueItem"
+import { NewsItem } from "./NewsItem"
 
 export const NewsVueGrid = () => {
 
@@ -23,7 +23,7 @@ export const NewsVueGrid = () => {
         <div className="container-box-news">
             {
                 newsFilterV.map( data => (
-                    <NewsVueItem
+                    <NewsItem
                         key={data.id}
                         { ...data }
                     />
