@@ -16,8 +16,6 @@ export const useFetchDataReact = () => {
         getNews()
     }, [])
 
-    // console.log(newsReact);
-
     return {
         newsReact
     }

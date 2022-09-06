@@ -13,7 +13,7 @@ export const NewsReactItem = ({ author, created, title, url }) => {
     const handleClickContainerText = () => {
         window.open(url,"_blank")
     }
-    
+
 
     {
         if ( author, created, title, url ) {

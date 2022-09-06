@@ -5,6 +5,7 @@ export const getDataReact = async ( id ) => {
     const resp = await fetch(url)
     const { hits } = await resp.json()
 
+    
     const dataReact = hits.map( data => ({
         id: data.objectID,
         author: data.author,
@@ -13,7 +14,6 @@ export const getDataReact = async ( id ) => {
         created: data.created_at,
     }) )
 
-    // console.log(hits);
 
     return dataReact
 

@@ -13,7 +13,6 @@ export const getDataVuejs = async ( id ) => {
         created: data.created_at,
     }) )
 
-    // console.log(hits);
 
     return dataVuejs
 

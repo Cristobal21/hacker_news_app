@@ -3,7 +3,7 @@ export const NewsVueItem = ({ author, created, title, url }) => {
 
     const handleClick = () => {
         $(document).ready(() => {
-            $("img").click((e) => {
+            $("img").click(() => {
                 $("img").toggleClass("backImage")
             })
         })
@@ -12,7 +12,7 @@ export const NewsVueItem = ({ author, created, title, url }) => {
     const handleClickContainerText = () => {
         window.open(url,"_blank")
     }
-    
+
 
     {
         if ( author, created, title, url ) {

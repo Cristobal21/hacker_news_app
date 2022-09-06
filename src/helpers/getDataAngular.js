@@ -6,14 +6,16 @@ export const getDataAngular = async ( id ) => {
     const { hits } = await resp.json()
 
     const dataAngular = hits.map( data => ({
+
         id: data.objectID,
         author: data.author,
         title: data.story_title,
         url: data.story_url,
         created: data.created_at,
+
     }) )
 
-    // console.log(hits);
+
 
     return dataAngular
 

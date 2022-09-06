@@ -1,11 +1,12 @@
 import { Navigate, Route, Routes } from "react-router-dom"
+import { PaginationNews } from "../components/PaginationNews"
 import { All, AngularNews, Faves, ReactNews, VuejsNews } from "../pages"
 
 export const AppRouter = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={<All />} />
+                <Route path="/" element={<AngularNews />} />
                 <Route path="faves" element={<Faves />} />
                 <Route path="react" element={<ReactNews />} />
                 <Route path="angular" element={<AngularNews />} />
