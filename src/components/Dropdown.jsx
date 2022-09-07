@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './styles.css'
 
 
+
 export const Dropdown = () => {
 
     const handleClick = () => {
@@ -31,15 +32,15 @@ export const Dropdown = () => {
                 </button>
                 <div id='idDropdownContent' className='dropdown-content'>
                     <Link to="/angular">
-                        <img src="../public/imgs/angular.jpg" alt="angular" />
+                        <img src="../../public/imgs/angular.jpg" alt="angular" />
                         <p>Angular</p>
                     </Link>
                     <Link to="/react">
-                        <img src="../public/imgs/react.jpg" alt="react" />
+                        <img src="../../public/imgs/react.jpg" alt="react" />
                         <p>React</p>
                     </Link>
                     <Link to="/vuejs">
-                        <img src="../public/imgs/vuejs.jpg" alt="vuejs" />
+                        <img src="../../public/imgs/vuejs.jpg" alt="vuejs" />
                         <p>Vuejs</p>
                     </Link>
                 </div>
