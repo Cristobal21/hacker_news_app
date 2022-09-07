@@ -1,12 +1,11 @@
+import PropTypes from 'prop-types'
 import { BiTimeFive } from "react-icons/bi"
-
 
 export const NewsItem = ({ author, created, title, url }) => {
 
     const newsDate = created.slice(0,10)
     const newsFullHour = created.slice(11,19)
     const newsHourMin = newsFullHour.slice(0,5)
-
 
     const handleClick = () => {
         $(document).ready(() => {
@@ -32,7 +31,7 @@ export const NewsItem = ({ author, created, title, url }) => {
                         <div className="container-liked-button">
                             <div className="liked-button" id="containerHeartId">
                                 <img 
-                                    src="../public/imgs/outline-heart.svg" 
+                                    src="../../public/imgs/outline-heart.svg" 
                                     alt="heart" 
                                     className="img-liked"
                                     id="heartId"
@@ -45,4 +44,12 @@ export const NewsItem = ({ author, created, title, url }) => {
             )
         }
     }
+}
+
+
+NewsItem.propTypes = {
+    author: PropTypes.string.isRequired,
+    created: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
 }

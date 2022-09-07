@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <NewsItem/> Match with snapshot 1`] = `
+<div>
+  <div
+    class="container-news"
+  >
+    <div
+      class="container-text"
+    >
+      <p
+        class="p1"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+          />
+          <path
+            d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586z"
+          />
+        </svg>
+         Posted on 2022-09-06 at  by Cristobal
+      </p>
+      <p
+        class="p2"
+      >
+        Hello world
+      </p>
+    </div>
+    <div
+      class="container-liked-button"
+    >
+      <div
+        class="liked-button"
+        id="containerHeartId"
+      >
+        <img
+          alt="heart"
+          class="img-liked"
+          id="heartId"
+          src="../../public/imgs/outline-heart.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

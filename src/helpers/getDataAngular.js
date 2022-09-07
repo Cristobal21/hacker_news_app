@@ -1,5 +1,5 @@
 
-export const getDataAngular = async ( id ) => {
+export const getDataAngular = async () => {
 
     const url = `https://hn.algolia.com/api/v1/search_by_date?query=angular&page=0`
     const resp = await fetch(url)

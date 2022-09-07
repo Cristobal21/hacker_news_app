@@ -1,5 +1,5 @@
 
-export const getDataVuejs = async ( id ) => {
+export const getDataVuejs = async () => {
 
     const url = `https://hn.algolia.com/api/v1/search_by_date?query=vuejs&page=0`
     const resp = await fetch(url)
