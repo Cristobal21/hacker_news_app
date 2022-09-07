@@ -46,10 +46,11 @@ export const NewsItem = ({ author, created, title, url }) => {
     }
 }
 
+// Habilitar para testing
 
-NewsItem.propTypes = {
-    author: PropTypes.string.isRequired,
-    created: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-}
+// NewsItem.propTypes = {
+//     author: PropTypes.string.isRequired,
+//     created: PropTypes.string.isRequired,
+//     title: PropTypes.string.isRequired,
+//     url: PropTypes.string.isRequired,
+// }

@@ -16,9 +16,6 @@ export const NewsVueGrid = () => {
         }
     }, [newsVuejs])
     
-    
-    
-    
     return (
         <div className="container-box-news">
             {

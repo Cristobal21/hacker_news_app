@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-import { ReignApp } from './ReignApp'
+import { NewsApp } from './NewsApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ReignApp />
+      <NewsApp />
     </BrowserRouter>
   </React.StrictMode>
 )
