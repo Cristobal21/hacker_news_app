@@ -5,22 +5,24 @@ import './styles.css'
 
 export const Dropdown = () => {
 
-    const handleClick = () => {
-        document.getElementById("idDropdownContent").classList.toggle("show");
-    }
+    // Cambia de imagen al hacer click, 50% funcional, necesita revicion
 
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
+    // const handleClick = () => {
+    //     document.getElementById("idDropdownContent").classList.toggle("show");
+    // }
+
+    // window.onclick = function (event) {
+    //     if (!event.target.matches('.dropbtn')) {
+    //         var dropdowns = document.getElementsByClassName("dropdown-content");
+    //         var i;
+    //         for (i = 0; i < dropdowns.length; i++) {
+    //             var openDropdown = dropdowns[i];
+    //             if (openDropdown.classList.contains('show')) {
+    //                 openDropdown.classList.remove('show');
+    //             }
+    //         }
+    //     }
+    // }
 
     return (
         <>
