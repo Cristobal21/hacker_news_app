@@ -7,13 +7,16 @@ export const NewsItem = ({ author, created, title, url }) => {
     const newsFullHour = created.slice(11,19)
     const newsHourMin = newsFullHour.slice(0,5)
 
-    const handleClick = () => {
-        $(document).ready(() => {
-            $("img").click((e) => {
-                $("img").toggleClass("backImage")
-            })
-        })
-    }
+
+    // Cambia la imagen corazon al hacer click, funcional al 50%,necesita revicion
+
+    // const handleClick = () => {
+    //     $(document).ready(() => {
+    //         $("img").click((e) => {
+    //             $("img").toggleClass("backImage")
+    //         })
+    //     })
+    // }
 
     const handleClickContainerText = () => {
         window.open(url,"_blank")
@@ -35,7 +38,7 @@ export const NewsItem = ({ author, created, title, url }) => {
                                     alt="heart" 
                                     className="img-liked"
                                     id="heartId"
-                                    onClick={handleClick}
+                                    // onClick={handleClick}
                                 />
                             </div>
                         </div>
