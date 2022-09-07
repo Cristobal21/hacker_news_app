@@ -1,4 +1,7 @@
 ### Notas
 
--- Aplicacion que usa API de Hacker News
+-- Aplicacion con API de Hacker News
 
+## <NewsItem/> Component (opcional)
+
+-- Habilitar PropTypes para el testing
