@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 import './styles.css'
-import angular from '../../public/imgs/angular.jpg'
+import {angular, react, vuejs} from '../../public/imgs/'
 
 
 
 export const Dropdown = () => {
-
 
     const handleClick = () => {
         document.getElementById("idDropdownContent").classList.toggle("show");
@@ -38,11 +37,11 @@ export const Dropdown = () => {
                             <p>Angular</p>
                         </Link>
                         <Link to="/react">
-                            <img src="../../public/imgs/react.jpg" alt="react" />
+                            <img src={react} alt="react" />
                             <p>React</p>
                         </Link>
                         <Link to="/vuejs">
-                            <img src="../../public/imgs/vuejs.jpg" alt="vuejs" />
+                            <img src={vuejs} alt="vuejs" />
                             <p>Vuejs</p>
                         </Link>
                     </div>
