@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import { BiTimeFive } from "react-icons/bi"
+import outlineHeart from '../../public/imgs/outline-heart.svg'
 
 export const NewsItem = ({ author, created, title, url }) => {
 
@@ -10,13 +11,13 @@ export const NewsItem = ({ author, created, title, url }) => {
 
     // Cambia la imagen corazon al hacer click, funcional al 50%,necesita revicion
 
-    // const handleClick = () => {
-    //     $(document).ready(() => {
-    //         $("img").click((e) => {
-    //             $("img").toggleClass("backImage")
-    //         })
-    //     })
-    // }
+    const handleClick = () => {
+        $(document).ready(() => {
+            $("img").click((e) => {
+                $("img").toggleClass("backImage")
+            })
+        })
+    }
 
     const handleClickContainerText = () => {
         window.open(url,"_blank")
@@ -34,7 +35,7 @@ export const NewsItem = ({ author, created, title, url }) => {
                         <div className="container-liked-button">
                             <div className="liked-button" id="containerHeartId">
                                 <img 
-                                    src="../../public/imgs/outline-heart.svg" 
+                                    src={outlineHeart} 
                                     alt="heart" 
                                     className="img-liked"
                                     id="heartId"
