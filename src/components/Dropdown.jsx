@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './styles.css'
+import angular from '../../public/imgs/angular.jpg'
 
 
 
@@ -33,7 +34,7 @@ export const Dropdown = () => {
                     </button>
                     <div id='idDropdownContent' className='dropdown-content'>
                         <Link to="/angular">
-                            <img src="../../public/imgs/angular.jpg" alt="angular" />
+                            <img src={angular} alt="angular" />
                             <p>Angular</p>
                         </Link>
                         <Link to="/react">
