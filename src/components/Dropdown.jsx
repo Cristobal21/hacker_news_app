@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import './styles.css'
-import {angular, react, vuejs} from '../../public/imgs/'
+import angular from '../../public/imgs/angular.jpg'
+import react from '../../public/imgs/react.jpg'
+import vuejs from '../../public/imgs/vuejs.jpg'
 
 
 
